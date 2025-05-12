@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج الخدمات المشتركة</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            direction: rtl;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+            font-weight: bold;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2c3e50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>نموذج الخدمات المشتركة</h2>
+    <form>
+        <label>نوع الخدمة:</label>
+        <select>
+            <option>خدمة النقل الداخلي</option>
+            <option>خدمة الطباعة والنسخ</option>
+            <option>خدمة الدعم الفني</option>
+            <option>خدمة إدارة الفعاليات</option>
+            <option>خدمة الصيانة العامة</option>
+        </select>
+
+        <label>تفاصيل الطلب:</label>
+        <textarea placeholder="أدخل تفاصيل الخدمة المطلوبة"></textarea>
+
+        <label>مقدم الطلب:</label>
+        <input type="text" placeholder="أدخل اسم مقدم الطلب">
+
+        <label>رقم الجوال:</label>
+        <input type="tel" placeholder="05XXXXXXXX">
+
+        <label>تاريخ الطلب:</label>
+        <input type="date">
+
+        <button type="submit">إرسال الطلب</button>
+    </form>
+</div>
+
+</body>
+</html>
